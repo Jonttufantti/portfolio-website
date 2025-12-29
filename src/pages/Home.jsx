@@ -1,15 +1,20 @@
+import profilePic from "../assets/home/profile.png";
 import TechStack from "../components/TechStack";
 
 export default function Home() {
   return (
     <>
       <section style={styles.hero}>
-        <div>
+        <div style={styles.textContainer}>
           <h1 style={styles.title}>Joona Sandbacka</h1>
           <h2 style={styles.subtitle}>Full-stack Developer</h2>
           <p style={styles.text}>
             Front-end focused developer building practical web applications.
           </p>
+        </div>
+
+        <div style={styles.imageContainer}>
+          <img src={profilePic} alt="Profile" style={styles.image} />
         </div>
       </section>
 
@@ -23,6 +28,16 @@ const styles = {
     minHeight: "60vh",
     display: "flex",
     alignItems: "center",
+    justifyContent: "space-between",
+    gap: "2rem",
+    padding: "2rem",
+    flexWrap: "wrap",
+  },
+  textContainer: {
+    maxWidth: "500px",
+    flex: 1,
+    minWidth: "280px",
+    textAlign: "left",
   },
   title: {
     fontSize: "3rem",
@@ -35,5 +50,19 @@ const styles = {
   text: {
     maxWidth: "500px",
     lineHeight: 1.6,
+  },
+  imageContainer: {
+    flex: 1,
+    minWidth: "250px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  image: {
+    width: "250px",
+    height: "250px",
+    borderRadius: "50%",
+    objectFit: "cover",
+    boxShadow: "0 8px 20px rgba(0, 0, 0, 0.4)",
   },
 };
