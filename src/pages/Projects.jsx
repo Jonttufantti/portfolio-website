@@ -32,7 +32,7 @@ export default function Projects() {
           title="EntreFox App"
           description="Maintained and extended a legacy application, including multilingual support."
           tech={["React", "JavaScript"]}
-          link="https://github.com/yourusername/entreforx"
+          link="https://github.com/Jonttufantti/entrefox_app"
           images={[entre1, entre2, entre3, entre4, entre5, entre6]}
           isMobile={true}
         />
@@ -41,7 +41,7 @@ export default function Projects() {
           title="VarausApp"
           description="Student project for booking and reservation management. Focused on front-end implementation."
           tech={["JavaScript", "HTML", "CSS"]}
-          link="https://github.com/yourusername/varausapp"
+          link="https://github.com/Jonttufantti/varausapp"
           images={[varaus1, varaus2, varaus3, varaus4, varaus5]}
           isMobile={false}
         />

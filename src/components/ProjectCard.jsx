@@ -54,7 +54,7 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    overflow: "auto",
+    overflow: "contain",
   },
   desc: {
     margin: "0.5rem 0",

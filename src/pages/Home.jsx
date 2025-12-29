@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <section style={styles.hero}>
         <div>
-          <h1 style={styles.title}>Joona</h1>
+          <h1 style={styles.title}>Joona Sandbacka</h1>
           <h2 style={styles.subtitle}>Full-stack Developer</h2>
           <p style={styles.text}>
             Front-end focused developer building practical web applications.

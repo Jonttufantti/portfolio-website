@@ -12,6 +12,7 @@ export default function ProjectCarousel({ images, isMobile }) {
       navigation={true}
       spaceBetween={20}
       slidesPerView={1}
+      loop={true}
       style={styles.swiper}
     >
       {images.map((img, i) => (

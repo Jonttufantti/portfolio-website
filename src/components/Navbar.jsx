@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav style={styles.nav}>
-      <div style={styles.logo}>Joona</div>
+      <div style={styles.logo}>Joona Sandbacka</div>
       <div style={styles.links}>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/projects">Projects</NavLink>

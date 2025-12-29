@@ -22,16 +22,16 @@ main {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #38bdf8;
+  color: #38bdf8 !important;
 }
 
 .swiper-pagination-bullet {
-  background: #94a3b8;
-  opacity: 1;
+  background: #64748b !important;
+  opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
-  background: #38bdf8;
+  background: #38bdf8 !important;
 }
 
 .phone-frame {
