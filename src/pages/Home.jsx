@@ -5,16 +5,18 @@ export default function Home() {
   return (
     <>
       <section style={styles.hero}>
-        <div style={styles.textContainer}>
-          <h1 style={styles.title}>Joona Sandbacka</h1>
-          <h2 style={styles.subtitle}>Full-stack Developer</h2>
-          <p style={styles.text}>
-            Front-end focused developer building practical web applications.
-          </p>
-        </div>
+        <div style={styles.inner}>
+          <div style={styles.textContainer}>
+            <h1 style={styles.title}>Joona Sandbacka</h1>
+            <h2 style={styles.subtitle}>Full-stack Developer</h2>
+            <p style={styles.text}>
+              Front-end focused developer building practical web applications.
+            </p>
+          </div>
 
-        <div style={styles.imageContainer}>
-          <img src={profilePic} alt="Profile" style={styles.image} />
+          <div style={styles.imageContainer}>
+            <img src={profilePic} alt="Profile" style={styles.image} />
+          </div>
         </div>
       </section>
 
@@ -28,13 +30,22 @@ const styles = {
     minHeight: "60vh",
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "center",
     gap: "2rem",
     padding: "2rem",
     flexWrap: "wrap",
   },
+  inner: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    maxWidth: "1200px",
+    width: "100%",
+    flexWrap: "wrap",
+    gap: "2rem",
+  },
+
   textContainer: {
-    maxWidth: "500px",
     flex: 1,
     minWidth: "280px",
     textAlign: "left",
