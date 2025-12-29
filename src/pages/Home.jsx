@@ -1,14 +1,20 @@
+import TechStack from "../components/TechStack";
+
 export default function Home() {
   return (
-    <section style={styles.hero}>
-      <div>
-        <h1 style={styles.title}>Joona</h1>
-        <h2 style={styles.subtitle}>Full-stack Developer</h2>
-        <p style={styles.text}>
-          Front-end focused developer building practical web applications.
-        </p>
-      </div>
-    </section>
+    <>
+      <section style={styles.hero}>
+        <div>
+          <h1 style={styles.title}>Joona</h1>
+          <h2 style={styles.subtitle}>Full-stack Developer</h2>
+          <p style={styles.text}>
+            Front-end focused developer building practical web applications.
+          </p>
+        </div>
+      </section>
+
+      <TechStack />
+    </>
   );
 }
 
