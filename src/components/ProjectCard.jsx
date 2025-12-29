@@ -11,9 +11,9 @@ export default function ProjectCard({
     <div style={styles.card}>
       <h3>{title}</h3>
 
-      {images && <ProjectCarousel images={images} />}
-
       <p style={styles.desc}>{description}</p>
+
+      {images && <ProjectCarousel images={images} />}
 
       <div style={styles.tech}>
         {tech.map((t) => (

@@ -1,13 +1,15 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper/modules";
 
 export default function ProjectCarousel({ images }) {
   return (
     <Swiper
-      modules={[Pagination]}
+      modules={[Pagination, Navigation]}
       pagination={{ clickable: true }}
+      navigation={true}
       spaceBetween={20}
       slidesPerView={1}
       style={styles.swiper}
@@ -24,10 +26,15 @@ export default function ProjectCarousel({ images }) {
 const styles = {
   swiper: {
     marginTop: "1rem",
+    position: "relative",
+    zIndex: 0,
   },
   image: {
     width: "100%",
+    maxHeight: "500px",
+    objectFit: "contain",
     borderRadius: "8px",
     border: "1px solid #334155",
+    backgroundColor: "#0f172a",
   },
 };

@@ -7,7 +7,7 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Ubuntu, sans-serif;
-  background-color: #0f172a; /* dark slate */
+  background-color: #0f172a;
   color: #e5e7eb;
 }
 
@@ -18,4 +18,18 @@ a {
 
 main {
   padding: 2rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #38bdf8;
+}
+
+.swiper-pagination-bullet {
+  background: #94a3b8;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #38bdf8;
 }
