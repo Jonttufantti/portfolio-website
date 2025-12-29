@@ -25,6 +25,7 @@ export default function Projects() {
           tech={["React", "Node.js", "PostgreSQL"]}
           link="https://github.com/yourusername/taskpoint"
           images={[task1, task2]}
+          isMobile={false}
         />
 
         <ProjectCard
@@ -33,6 +34,7 @@ export default function Projects() {
           tech={["React", "JavaScript"]}
           link="https://github.com/yourusername/entreforx"
           images={[entre1, entre2, entre3, entre4, entre5, entre6]}
+          isMobile={true}
         />
 
         <ProjectCard
@@ -41,6 +43,7 @@ export default function Projects() {
           tech={["JavaScript", "HTML", "CSS"]}
           link="https://github.com/yourusername/varausapp"
           images={[varaus1, varaus2, varaus3, varaus4, varaus5]}
+          isMobile={false}
         />
       </div>
     </section>

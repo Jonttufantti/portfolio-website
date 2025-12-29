@@ -6,6 +6,7 @@ export default function ProjectCard({
   tech,
   link,
   images,
+  isMobile,
 }) {
   return (
     <div style={styles.card}>
@@ -13,7 +14,7 @@ export default function ProjectCard({
 
       <p style={styles.desc}>{description}</p>
 
-      {images && <ProjectCarousel images={images} />}
+      {images && <ProjectCarousel images={images} isMobile={isMobile} />}
 
       <div style={styles.tech}>
         {tech.map((t) => (

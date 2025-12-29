@@ -4,7 +4,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 
-export default function ProjectCarousel({ images }) {
+export default function ProjectCarousel({ images, isMobile }) {
   return (
     <Swiper
       modules={[Pagination, Navigation]}
@@ -16,7 +16,13 @@ export default function ProjectCarousel({ images }) {
     >
       {images.map((img, i) => (
         <SwiperSlide key={i}>
-          <img src={img} alt="" style={styles.image} />
+          {isMobile ? (
+            <div className="phone-frame">
+              <img src={img} alt="" />
+            </div>
+          ) : (
+            <img src={img} alt="" style={styles.image} />
+          )}
         </SwiperSlide>
       ))}
     </Swiper>
