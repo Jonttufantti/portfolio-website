@@ -27,3 +27,6 @@ jobs:
         run: |
           docker tag portfolio-website ${{ secrets.DOCKERHUB_USERNAME }}/portfolio-website:latest
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/portfolio-website:latest
+
+      - name: Trigger Render deploy
+        run: curl -X POST https://api.render.com/deploy/srv-d5981t6uk2gs73e1tvk0?key=FCxoYfn_eZg
