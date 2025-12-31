@@ -8,7 +8,7 @@ import {
   FaGitAlt,
   FaLinux,
   FaPython,
-  FaCode,
+  FaAndroid,
 } from "react-icons/fa";
 
 import {
@@ -27,39 +27,69 @@ export default function TechStack() {
 
       <div style={styles.grid}>
         <Category title="Front-end">
-          <FaReact color="#61DAFB" />
-          <FaJs color="#F7DF1E" />
-          <span style={{ fontSize: "1rem" }}>TS</span>
-          <FaHtml5 color="#E34F26" />
-          <FaCss3Alt color="#1572B6" />
-          <span style={{ fontSize: "1rem" }}>MUI</span>
-          <SiNextdotjs color="#000000" />
+          {/* React with white background */}
+          <div
+            style={{
+              backgroundColor: "#fff",
+              borderRadius: "4px",
+              padding: "0.15rem",
+              display: "inline-flex",
+            }}
+            title="React"
+          >
+            <FaReact color="#61DAFB" />
+          </div>
+
+          {/* React Native */}
+          <FaReact color="#61DAFB" title="React Native" />
+          <FaJs color="#F7DF1E" title="JavaScript" />
+          <span style={{ fontSize: "1rem" }} title="TypeScript">
+            TS
+          </span>
+          <FaHtml5 color="#E34F26" title="HTML5" />
+          <FaCss3Alt color="#1572B6" title="CSS3" />
+          <span style={{ fontSize: "1rem" }} title="Material UI">
+            MUI
+          </span>
+          <SiNextdotjs color="#000000" title="Next.js" />
         </Category>
 
         <Category title="Back-end">
-          <FaNodeJs color="#339933" />
-          <FaPython color="#3776AB" />
-          <SiDjango color="#092E20" />
-          <SiExpress color="#000000" />
+          <FaNodeJs color="#339933" title="Node.js" />
+          <FaPython color="#3776AB" title="Python" />
+          <SiDjango color="#092E20" title="Django" />
+          <SiExpress color="#000000" title="Express.js" />
         </Category>
 
         <Category title="Databases">
-          <SiPostgresql color="#4169E1" />
-          <SiMongodb color="#47A248" />
+          <SiPostgresql color="#4169E1" title="PostgreSQL" />
+          <SiMongodb color="#47A248" title="MongoDB" />
+          <span style={{ fontSize: "1rem" }} title="SQL">
+            SQL
+          </span>
         </Category>
 
         <Category title="Cloud & DevOps">
-          <FaDocker color="#2496ED" />
-          <span style={{ fontSize: "1rem" }}>CI/CD</span>
-          <span style={{ fontSize: "1rem" }}>Docker Compose</span>
-          <span style={{ fontSize: "1rem" }}>Kubernetes</span>
+          <FaDocker color="#2496ED" title="Docker" />
+          <span style={{ fontSize: "1rem" }} title="CI/CD">
+            CI/CD
+          </span>
+          <span style={{ fontSize: "1rem" }} title="Docker Compose">
+            Docker Compose
+          </span>
+          <span style={{ fontSize: "1rem" }} title="Kubernetes">
+            Kubernetes
+          </span>
         </Category>
 
         <Category title="Tools">
-          <FaGitAlt color="#F05032" />
-          <FaLinux color="#FCC624" />
-          <SiPostman color="#FF6C37" />
-          <span style={{ fontSize: "1rem" }}>VS Code</span>
+          <FaGitAlt color="#F05032" title="Git" />
+          <FaLinux color="#FCC624" title="Linux" />
+          <SiPostman color="#FF6C37" title="Postman" />
+          <span style={{ fontSize: "1rem" }} title="Visual Studio Code">
+            VS Code
+          </span>
+          <FaAndroid color="#007ACC" title="Android Studio" />
         </Category>
       </div>
     </section>

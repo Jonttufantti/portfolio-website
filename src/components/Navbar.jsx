@@ -3,7 +3,9 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav style={styles.nav}>
-      <div style={styles.logo}>Joona Sandbacka</div>
+      <NavLink to="/" style={styles.logo}>
+        Joona Sandbacka
+      </NavLink>
       <div style={styles.links}>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/projects">Projects</NavLink>
@@ -23,6 +25,8 @@ const styles = {
   logo: {
     fontWeight: "bold",
     fontSize: "1.1rem",
+    textDecoration: "none",
+    color: "inherit",
   },
   links: {
     display: "flex",
