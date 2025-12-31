@@ -8,26 +8,39 @@ import {
   FaGitAlt,
   FaLinux,
   FaPython,
+  FaCode,
 } from "react-icons/fa";
-import { SiPostgresql, SiMongodb, SiDjango } from "react-icons/si";
+
+import {
+  SiPostgresql,
+  SiMongodb,
+  SiDjango,
+  SiExpress,
+  SiPostman,
+  SiNextdotjs,
+} from "react-icons/si";
 
 export default function TechStack() {
   return (
     <section style={styles.section}>
-      <h3 style={styles.heading}>Areas of Expertise</h3>
+      <h3 style={styles.heading}>Skills</h3>
 
       <div style={styles.grid}>
         <Category title="Front-end">
           <FaReact color="#61DAFB" />
           <FaJs color="#F7DF1E" />
+          <span style={{ fontSize: "1rem" }}>TS</span>
           <FaHtml5 color="#E34F26" />
           <FaCss3Alt color="#1572B6" />
+          <span style={{ fontSize: "1rem" }}>MUI</span>
+          <SiNextdotjs color="#000000" />
         </Category>
 
         <Category title="Back-end">
           <FaNodeJs color="#339933" />
           <FaPython color="#3776AB" />
           <SiDjango color="#092E20" />
+          <SiExpress color="#000000" />
         </Category>
 
         <Category title="Databases">
@@ -38,11 +51,15 @@ export default function TechStack() {
         <Category title="Cloud & DevOps">
           <FaDocker color="#2496ED" />
           <span style={{ fontSize: "1rem" }}>CI/CD</span>
+          <span style={{ fontSize: "1rem" }}>Docker Compose</span>
+          <span style={{ fontSize: "1rem" }}>Kubernetes</span>
         </Category>
 
         <Category title="Tools">
           <FaGitAlt color="#F05032" />
           <FaLinux color="#FCC624" />
+          <SiPostman color="#FF6C37" />
+          <span style={{ fontSize: "1rem" }}>VS Code</span>
         </Category>
       </div>
     </section>

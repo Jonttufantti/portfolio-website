@@ -1,5 +1,6 @@
 import profilePic from "../assets/home/profile.png";
 import TechStack from "../components/TechStack";
+import HeroTextCarousel from "../components/HeroTextCarousel";
 
 export default function Home() {
   return (
@@ -9,9 +10,7 @@ export default function Home() {
           <div style={styles.textContainer}>
             <h1 style={styles.title}>Joona Sandbacka</h1>
             <h2 style={styles.subtitle}>Full-stack Developer</h2>
-            <p style={styles.text}>
-              Front-end focused developer building practical web applications.
-            </p>
+            <HeroTextCarousel />
           </div>
 
           <div style={styles.imageContainer}>
@@ -56,7 +55,7 @@ const styles = {
   },
   subtitle: {
     color: "#94a3b8",
-    marginBottom: "1rem",
+    marginBottom: "4rem",
   },
   text: {
     maxWidth: "500px",
