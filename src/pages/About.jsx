@@ -13,15 +13,15 @@ export default function About() {
 
       <Section title="Work Experience">
         <Item
-          title="Full-stack Developer (Trainee) – City of Turku"
+          title="Full-stack Developer – City of Turku"
           period="Oct 2024 – Apr 2025"
-          description="Working on TaskPoint, an internal project management tool similar to Trello.
+          description="Working on ProjectPoint, an internal project management tool similar to Trello.
           Responsible primarily for front-end development with React, JavaScript, and TypeScript,
           while also contributing to back-end features with Django and Python."
         />
 
         <Item
-          title="Software Developer – CSStheFirma"
+          title="Software Developer – TUAS - theFirma"
           period="May 2023 – Aug 2023"
           description="Web development with React, MongoDB, JavaScript, and Expo.
           Also served as project manager for multiple projects."
@@ -37,14 +37,14 @@ export default function About() {
 
       <Section title="Education">
         <Item
-          title="Bachelor of Engineering, Information and Communications Technology"
-          period="2024"
-          description="Turku University of Applied Sciences"
-        />
-        <Item
           title="Full Stack Open – Helsinki University"
           period="2025"
           description="Modern web development course focusing on React, TypeScript, Node.js, and CI/CD."
+        />
+        <Item
+          title="Bachelor of Engineering, Information and Communications Technology"
+          period="2024"
+          description="Turku University of Applied Sciences"
         />
         <Item
           title="Vocational Qualification in Business and Administration"
