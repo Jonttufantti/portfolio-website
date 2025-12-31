@@ -3,6 +3,9 @@ import ProjectCarousel from "./ProjectCarousel";
 export default function ProjectCard({
   title,
   description,
+  overview,
+  highlights,
+  role,
   tech,
   link,
   images,
@@ -13,6 +16,31 @@ export default function ProjectCard({
       <div style={styles.top}>
         <h3>{title}</h3>
         <p style={styles.desc}>{description}</p>
+        {overview && (
+          <p style={styles.overview}>
+            <strong>Overview:</strong> {overview}
+          </p>
+        )}
+        {highlights && (
+          <div>
+            <strong>Highlights:</strong>
+            <ul style={styles.list}>
+              {highlights.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {role && (
+          <div>
+            <strong>My Role:</strong>
+            <ul style={styles.list}>
+              {role.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
 
       <div style={styles.carouselContainer}>
@@ -55,9 +83,18 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     overflow: "contain",
+    marginBottom: "1rem",
   },
   desc: {
     margin: "0.5rem 0",
+    color: "#cbd5f5",
+  },
+  overview: {
+    margin: "0.5rem 0",
+    color: "#cbd5f5",
+  },
+  list: {
+    margin: "0.25rem 0 0.5rem 1.2rem",
     color: "#cbd5f5",
   },
   tech: {

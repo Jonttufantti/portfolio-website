@@ -30,7 +30,18 @@ export default function Projects() {
         <ProjectCard
           title="TaskPoint"
           description="Trello-like project management tool developed for internal use at the City of Turku."
-          tech={["React", "Node.js", "PostgreSQL"]}
+          overview="A web app to manage projects and tasks internally. Provides Kanban-style boards and task tracking."
+          highlights={[
+            "Customizable boards and task lists",
+            "Drag-and-drop interface",
+            "Real-time updates for multiple users",
+          ]}
+          role={[
+            "Developed frontend using React and Typescript",
+            "Integrated backend API with Python",
+            "Implemented PostgreSQL database connections",
+          ]}
+          tech={["React", "TypeScript", "Python", "PostgreSQL"]}
           link="https://github.com/jonttufantti/projectpoint"
           images={[point1, point2, point3, point4, point5]}
           isMobile={false}
@@ -39,6 +50,17 @@ export default function Projects() {
         <ProjectCard
           title="VarausApp"
           description="Student project for booking and reservation management. Focused on front-end implementation."
+          overview="Web app for reserving computers and meeting spaces. Developed as a student project for smooth booking flow."
+          highlights={[
+            "Interactive booking interface",
+            "Real-time availability updates",
+            "Responsive design for desktop and mobile",
+          ]}
+          role={[
+            "Frontend development with React and Chakra UI",
+            "Integrated React Router for navigation",
+            "Set up Docker for local development",
+          ]}
           tech={["JavaScript", "HTML", "CSS"]}
           link="https://github.com/Jonttufantti/varausapp"
           images={[varaus1, varaus2, varaus3, varaus4, varaus5]}
@@ -47,8 +69,19 @@ export default function Projects() {
 
         <ProjectCard
           title="EntreFox App"
-          description="Maintained and extended a legacy application, including multilingual support."
-          tech={["React", "JavaScript"]}
+          description="Cross-platform mobile application supporting entrepreneurship, with multilingual forms."
+          overview="Restored legacy React Native app and added Finnish & English language support for accessibility."
+          highlights={[
+            "Dockerized for easy setup",
+            "Runs on Android emulator or real device with Expo",
+            "Mobile-friendly UI with smooth performance",
+          ]}
+          role={[
+            "Restored existing functionality",
+            "Added multi-language support",
+            "Ensured smooth performance on Android and iOS",
+          ]}
+          tech={["React Native", "Expo"]}
           link="https://github.com/Jonttufantti/entrefox_app"
           images={[entre1, entre2, entre3, entre4, entre5, entre6]}
           isMobile={true}
@@ -56,8 +89,19 @@ export default function Projects() {
 
         <ProjectCard
           title="LandLord Pro App"
-          description="Maintained and extended a legacy application, including multilingual support."
-          tech={["React", "JavaScript"]}
+          description="Android application for Vietnamese landlords to manage properties and tenants."
+          overview="Functional thesis project to create a modern, user-friendly property management app. Focus was on functionality."
+          highlights={[
+            "View and manage properties and tenants",
+            "Track rent payments and due dates",
+            "Simple, intuitive interface",
+          ]}
+          role={[
+            "Developed entire Android app using Kotlin",
+            "Designed UI and navigation flow",
+            "Implemented SQLite database and core functionalities",
+          ]}
+          tech={["Kotlin", "Android Studio", "SQLite"]}
           link="https://github.com/Jonttufantti/LandLordPro"
           images={[land1, land2, land3, land4, land5]}
           isMobile={true}
