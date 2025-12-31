@@ -3,7 +3,9 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav style={styles.nav}>
-      <div style={styles.logo}>Joona Sandbacka</div>
+      <div style={styles.logo}>
+        <a href="#home">Joona Sandbacka</a>
+      </div>
       <div style={styles.links}>
         <a href="#home">Home</a>
         <a href="#about">About</a>
