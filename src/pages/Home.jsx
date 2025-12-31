@@ -1,11 +1,13 @@
 import profilePic from "../assets/home/profile.png";
 import TechStack from "../components/TechStack";
 import HeroTextCarousel from "../components/HeroTextCarousel";
+import Projects from "../pages/Projects";
+import About from "../pages/About";
 
 export default function Home() {
   return (
-    <>
-      <section style={styles.hero}>
+    <div style={{ paddingBottom: "80px" }}>
+      <section id="home" style={styles.hero}>
         <div style={styles.inner}>
           <div style={styles.textContainer}>
             <h1 style={styles.title}>Joona Sandbacka</h1>
@@ -20,12 +22,21 @@ export default function Home() {
       </section>
 
       <TechStack />
-    </>
+
+      <section id="about" style={{ scrollMarginTop: "40px" }}>
+        <About />
+      </section>
+
+      <section id="projects" style={{ scrollMarginTop: "40px" }}>
+        <Projects />
+      </section>
+    </div>
   );
 }
 
 const styles = {
   hero: {
+    paddingTop: "6rem",
     minHeight: "60vh",
     display: "flex",
     alignItems: "center",
@@ -69,8 +80,8 @@ const styles = {
     alignItems: "center",
   },
   image: {
-    width: "250px",
-    height: "250px",
+    width: "350px",
+    height: "350px",
     borderRadius: "50%",
     objectFit: "cover",
     boxShadow: "0 8px 20px rgba(0, 0, 0, 0.4)",

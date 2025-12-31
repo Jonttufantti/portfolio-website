@@ -3,13 +3,11 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav style={styles.nav}>
-      <NavLink to="/" style={styles.logo}>
-        Joona Sandbacka
-      </NavLink>
+      <div style={styles.logo}>Joona Sandbacka</div>
       <div style={styles.links}>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/about">About</NavLink>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
       </div>
     </nav>
   );
@@ -21,6 +19,12 @@ const styles = {
     justifyContent: "space-between",
     padding: "1rem 2rem",
     borderBottom: "1px solid #334155",
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100%",
+    backgroundColor: "#020617",
+    zIndex: 1000,
   },
   logo: {
     fontWeight: "bold",

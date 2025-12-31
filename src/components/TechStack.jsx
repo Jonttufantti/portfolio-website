@@ -107,7 +107,7 @@ function Category({ title, children }) {
 
 const styles = {
   section: {
-    marginTop: "4rem",
+    marginTop: "3rem",
   },
   heading: {
     marginBottom: "2rem",

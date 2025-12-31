@@ -6,9 +6,15 @@ export default function About() {
       <p style={styles.intro}>
         I am an ICT Engineering graduate and full-stack developer with a strong
         focus on front-end development. Previously, I worked nearly 10 years in
-        accounting, developing resilience, attention to detail, and teamwork
-        skills. I now focus on building practical web applications and
-        strengthening my back-end, cloud, and DevOps expertise.
+        accounting, where I developed resilience, attention to detail, and
+        teamwork skills.
+        <br />
+        <br />
+        Today, I build practical web applications using React, Node.js, and
+        Docker, while strengthening my back-end, cloud, and DevOps expertise. My
+        work combines problem-solving, creativity, and hands-on technical
+        skills, and I enjoy tackling new challenges through projects that make a
+        real impact.
       </p>
 
       <Section title="Work Experience">
@@ -37,9 +43,9 @@ export default function About() {
 
       <Section title="Education">
         <Item
-          title="Full Stack Open – Helsinki University"
+          title="Helsinki University"
           period="2025"
-          description="Modern web development course focusing on React, TypeScript, Node.js, and CI/CD."
+          description="Full Stack Open – Modern web development course focusing on React, TypeScript, Node.js, and CI/CD."
         />
         <Item
           title="Bachelor of Engineering, Information and Communications Technology"
@@ -55,9 +61,12 @@ export default function About() {
 
       <Section title="Languages">
         <p>
+          <br />
           Finnish: Native
           <br />
+          <br />
           English: Excellent
+          <br />
         </p>
       </Section>
     </section>
@@ -85,6 +94,7 @@ function Item({ title, period, description }) {
 
 const styles = {
   container: {
+    marginTop: "3rem",
     maxWidth: "800px",
     margin: "0 auto",
     padding: "2rem",

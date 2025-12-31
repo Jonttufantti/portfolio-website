@@ -27,5 +27,11 @@ const styles = {
     padding: "1.5rem",
     borderTop: "1px solid #334155",
     fontSize: "1.5rem",
+    position: "fixed",
+    bottom: 0,
+    left: 0,
+    width: "100%",
+    backgroundColor: "#020617",
+    zIndex: 1000,
   },
 };
