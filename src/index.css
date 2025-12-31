@@ -35,9 +35,10 @@ main {
 }
 
 .phone-frame {
-  width: 200px;
-  max-width: 40vw;
-  aspect-ratio: 9 / 19;
+  height: 100%;
+  max-height: 100%;
+  aspect-ratio: 9 / 20;
+
   border: 12px solid #333;
   border-radius: 36px;
   overflow: hidden;

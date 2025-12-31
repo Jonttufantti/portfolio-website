@@ -17,13 +17,15 @@ export default function ProjectCarousel({ images, isMobile }) {
     >
       {images.map((img, i) => (
         <SwiperSlide key={i}>
-          {isMobile ? (
-            <div className="phone-frame">
-              <img src={img} alt="" />
-            </div>
-          ) : (
-            <img src={img} alt="" style={styles.image} />
-          )}
+          <div style={styles.slide}>
+            {isMobile ? (
+              <div className="phone-frame">
+                <img src={img} alt="" />
+              </div>
+            ) : (
+              <img src={img} alt="" style={styles.image} />
+            )}
+          </div>
         </SwiperSlide>
       ))}
     </Swiper>
@@ -36,9 +38,17 @@ const styles = {
     position: "relative",
     zIndex: 0,
   },
+
+  slide: {
+    height: "360px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
   image: {
     width: "100%",
-    maxHeight: "500px",
+    maxHeight: "100%",
     objectFit: "contain",
     borderRadius: "8px",
     border: "1px solid #334155",

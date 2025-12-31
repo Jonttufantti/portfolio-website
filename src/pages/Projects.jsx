@@ -1,6 +1,9 @@
 import ProjectCard from "../components/ProjectCard";
-import task1 from "../assets/projects/taskpoint/taskpoint-1.png";
-import task2 from "../assets/projects/taskpoint/taskpoint-2.png";
+import point1 from "../assets/projects/projectpoint/projectpoint-1.png";
+import point2 from "../assets/projects/projectpoint/projectpoint-2.png";
+import point3 from "../assets/projects/projectpoint/projectpoint-3.png";
+import point4 from "../assets/projects/projectpoint/projectpoint-4.png";
+import point5 from "../assets/projects/projectpoint/projectpoint-5.png";
 import entre1 from "../assets/projects/entrefox/entrefox-1.png";
 import entre2 from "../assets/projects/entrefox/entrefox-2.png";
 import entre3 from "../assets/projects/entrefox/entrefox-3.png";
@@ -23,8 +26,8 @@ export default function Projects() {
           title="TaskPoint"
           description="Trello-like project management tool developed for internal use at the City of Turku."
           tech={["React", "Node.js", "PostgreSQL"]}
-          link="https://github.com/yourusername/taskpoint"
-          images={[task1, task2]}
+          link="https://github.com/jonttufantti/projectpoint"
+          images={[point1, point2, point3, point4, point5]}
           isMobile={false}
         />
 
