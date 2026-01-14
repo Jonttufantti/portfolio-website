@@ -20,6 +20,10 @@ import land2 from "../assets/projects/landlordpro/landlordpro-2.png";
 import land3 from "../assets/projects/landlordpro/landlordpro-3.png";
 import land4 from "../assets/projects/landlordpro/landlordpro-4.png";
 import land5 from "../assets/projects/landlordpro/landlordpro-5.png";
+import next1 from "../assets/projects/nextcloud/nextcloud-1.png";
+import next2 from "../assets/projects/nextcloud/nextcloud-2.png";
+import next3 from "../assets/projects/nextcloud/nextcloud-3.png";
+import next4 from "../assets/projects/nextcloud/nextcloud-4.png";
 
 export default function Projects() {
   return (
@@ -105,6 +109,28 @@ export default function Projects() {
           link="https://github.com/Jonttufantti/LandLordPro"
           images={[land1, land2, land3, land4, land5]}
           isMobile={true}
+        />
+
+        <ProjectCard
+          title="Nextcloud"
+          description="Self-hosted Nextcloud server running on a Raspberry Pi 5 with Docker and external SSD."
+          overview="Private cloud service for file storage, synchronization, and access across devices."
+          highlights={[
+            "Persistent storage on external SSD for data safety",
+            "Secure remote access via Tailscale VPN",
+            "Long-running, reliable Dockerized services on ARM hardware",
+            "Web UI for file management and sharing",
+          ]}
+          role={[
+            "Set up Raspberry Pi with Docker and Docker Compose",
+            "Configured Nextcloud, MariaDB, Adminer, and Portainer containers",
+            "Mounted and managed external SSD for persistent storage",
+            "Implemented secure remote access using Tailscale",
+          ]}
+          tech={["Docker", "Linux", "Nextcloud", "MariaDB", "Tailscale"]}
+          link="https://github.com/Jonttufantti/nextcloud-raspberrypi"
+          images={[next1, next2, next3, next4]}
+          isMobile={false}
         />
       </div>
     </section>

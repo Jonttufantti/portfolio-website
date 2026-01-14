@@ -45,17 +45,17 @@ export default function About() {
         <Section title="Education">
           <Item
             title="Helsinki University"
-            period="2025"
+            period="2025-"
             description="Full Stack Open – Modern web development course focusing on React, TypeScript, Node.js, and CI/CD."
           />
           <Item
             title="Bachelor of Engineering, Information and Communications Technology"
-            period="2024"
+            period="2020-2024"
             description="Turku University of Applied Sciences"
           />
           <Item
             title="Vocational Qualification in Business and Administration"
-            period="2012"
+            period="2010-2012"
             description="Turun Vocational School"
           />
         </Section>
