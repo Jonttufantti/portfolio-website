@@ -16,11 +16,6 @@ export default function ProjectCard({
       <div style={styles.top}>
         <h3>{title}</h3>
         <p style={styles.desc}>{description}</p>
-        {overview && (
-          <p style={styles.overview}>
-            <strong>Overview:</strong> {overview}
-          </p>
-        )}
         {highlights && (
           <div>
             <strong>Highlights:</strong>

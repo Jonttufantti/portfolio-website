@@ -77,7 +77,7 @@ flowchart LR
     style C fill:#fcf,stroke:#333,stroke-width:1px
     style D fill:#ccf,stroke:#333,stroke-width:1px
     style E fill:#ffc,stroke:#333,stroke-width:1px
-
+```
 
 This ensures that any change merged to the main branch is reflected live without manual steps.
 
@@ -91,4 +91,7 @@ This ensures that any change merged to the main branch is reflected live without
 ![Project Card Example](./screenshots/project-card.png)
 
 ---
+
+```
+
 ```

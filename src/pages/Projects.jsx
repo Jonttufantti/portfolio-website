@@ -36,8 +36,7 @@ export default function Projects() {
       <div style={styles.grid}>
         <ProjectCard
           title="TaskPoint"
-          description="Trello-like project management tool developed for internal use at the City of Turku."
-          overview="A web app to manage projects and tasks internally. Provides Kanban-style boards and task tracking."
+          description="Trello-like project management tool developed for internal use at the City of Turku. Provides Kanban-style boards and task tracking."
           highlights={[
             "Customizable boards and task lists",
             "Drag-and-drop interface",
@@ -56,8 +55,7 @@ export default function Projects() {
 
         <ProjectCard
           title="VarausApp"
-          description="Student project for booking and reservation management. Focused on front-end implementation."
-          overview="Web app for reserving computers and meeting spaces. Developed as a student project for smooth booking flow."
+          description="Web app for booking computers and meeting spaces. Developed as a intership project for smooth reservation management."
           highlights={[
             "Interactive booking interface",
             "Real-time availability updates",
@@ -76,8 +74,7 @@ export default function Projects() {
 
         <ProjectCard
           title="EntreFox App"
-          description="Cross-platform mobile application supporting entrepreneurship, with multilingual forms."
-          overview="Restored legacy React Native app and added Finnish & English language support for accessibility."
+          description="Cross-platform mobile app supporting entrepreneurship, featuring multilingual forms and questionnaires."
           highlights={[
             "Dockerized for easy setup",
             "Runs on Android emulator or real device with Expo",
@@ -96,8 +93,7 @@ export default function Projects() {
 
         <ProjectCard
           title="LandLord Pro App"
-          description="Android application for Vietnamese landlords to manage properties and tenants."
-          overview="Functional thesis project to create a modern, user-friendly property management app. Focus was on functionality."
+          description="Functional thesis. Android application for Vietnamese landlords to manage properties, tenants, and rent tracking efficiently."
           highlights={[
             "View and manage properties and tenants",
             "Track rent payments and due dates",
@@ -116,8 +112,7 @@ export default function Projects() {
 
         <ProjectCard
           title="Nextcloud"
-          description="Self-hosted Nextcloud server running on a Raspberry Pi 5 with Docker and external SSD."
-          overview="Private cloud service for file storage, synchronization, and access across devices."
+          description="Self-hosted private cloud server on Raspberry Pi 5 with Docker and external SSD for secure file storage and access."
           highlights={[
             "Persistent storage on external SSD for data safety",
             "Secure remote access via Tailscale VPN",
@@ -137,12 +132,9 @@ export default function Projects() {
         />
         <ProjectCard
           title="Portfolio Website"
-          description="Personal portfolio website showcasing projects, skills, and experience as a full-stack developer."
-          overview="Built to present work, skills, and professional background in a clean, responsive, and interactive format."
+          description="Personal portfolio website showcasing projects, skills, and experience with smooth animations and responsive design."
           highlights={[
             "Responsive design for desktop and mobile",
-            "Pinned navbar and footer for easy navigation",
-            "Smooth scroll between Home, About, and Projects sections",
             "Animated reveals on scroll for polished user experience",
             "CI/CD pipeline: push to GitHub → Docker Hub → Render deployment",
           ]}
@@ -150,7 +142,6 @@ export default function Projects() {
             "Designed and implemented full front-end using React",
             "Structured components for reusability (Navbar, Footer, ProjectCard, TechStack, HeroTextCarousel)",
             "Integrated project showcase with images, tech stack, and GitHub links",
-            "Implemented smooth scrolling and scroll-margin adjustments for pinned navbar",
             "Set up automated deployment pipeline from GitHub to Docker Hub to Render",
           ]}
           tech={[
