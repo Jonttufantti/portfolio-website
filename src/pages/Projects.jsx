@@ -24,6 +24,9 @@ import next1 from "../assets/projects/nextcloud/nextcloud-1.png";
 import next2 from "../assets/projects/nextcloud/nextcloud-2.png";
 import next3 from "../assets/projects/nextcloud/nextcloud-3.png";
 import next4 from "../assets/projects/nextcloud/nextcloud-4.png";
+import port1 from "../assets/projects/portfolio/portfolio-1.png";
+import port2 from "../assets/projects/portfolio/portfolio-2.png";
+import port3 from "../assets/projects/portfolio/portfolio-3.png";
 
 export default function Projects() {
   return (
@@ -130,6 +133,37 @@ export default function Projects() {
           tech={["Docker", "Linux", "Nextcloud", "MariaDB", "Tailscale"]}
           link="https://github.com/Jonttufantti/nextcloud-raspberrypi"
           images={[next1, next2, next3, next4]}
+          isMobile={false}
+        />
+        <ProjectCard
+          title="Portfolio Website"
+          description="Personal portfolio website showcasing projects, skills, and experience as a full-stack developer."
+          overview="Built to present work, skills, and professional background in a clean, responsive, and interactive format."
+          highlights={[
+            "Responsive design for desktop and mobile",
+            "Pinned navbar and footer for easy navigation",
+            "Smooth scroll between Home, About, and Projects sections",
+            "Animated reveals on scroll for polished user experience",
+            "CI/CD pipeline: push to GitHub → Docker Hub → Render deployment",
+          ]}
+          role={[
+            "Designed and implemented full front-end using React",
+            "Structured components for reusability (Navbar, Footer, ProjectCard, TechStack, HeroTextCarousel)",
+            "Integrated project showcase with images, tech stack, and GitHub links",
+            "Implemented smooth scrolling and scroll-margin adjustments for pinned navbar",
+            "Set up automated deployment pipeline from GitHub to Docker Hub to Render",
+          ]}
+          tech={[
+            "React",
+            "JavaScript",
+            "CSS",
+            "React Icons",
+            "React Router",
+            "Docker",
+            "Render",
+          ]}
+          link="https://github.com/Jonttufantti/portfolio-website"
+          images={[port1, port2, port3]}
           isMobile={false}
         />
       </div>
