@@ -27,6 +27,7 @@ import next4 from "../assets/projects/nextcloud/nextcloud-4.png";
 import port1 from "../assets/projects/portfolio/portfolio-1.png";
 import port2 from "../assets/projects/portfolio/portfolio-2.png";
 import port3 from "../assets/projects/portfolio/portfolio-3.png";
+import port4 from "../assets/projects/portfolio/portfolio-4.png";
 
 export default function Projects() {
   return (
@@ -154,7 +155,7 @@ export default function Projects() {
             "Render",
           ]}
           link="https://github.com/Jonttufantti/portfolio-website"
-          images={[port1, port2, port3]}
+          images={[port1, port2, port3, port4]}
           isMobile={false}
         />
       </div>
