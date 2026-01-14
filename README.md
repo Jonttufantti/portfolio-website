@@ -58,26 +58,29 @@ This portfolio website is built to present my work, skills, and professional bac
 
 ## Deployment Pipeline
 
-The portfolio website uses a CI/CD workflow for automatic deployments:
-
-- **A → B:** Developer pushes code to GitHub.
-- **B → C:** GitHub triggers Docker Hub to build the Docker image.
-- **C → D:** Docker Hub stores image; Render pulls it automatically.
-- **D → E:** Render deploys the portfolio website live.
+The portfolio website uses a fully automated CI/CD workflow:
 
 ```mermaid
 flowchart LR
-    A[Developer pushes code] --> B[GitHub Repository]
-    B --> C[Docker Hub builds Docker image]
-    C --> D[Render pulls Docker image]
-    D --> E[Portfolio Website deployed live]
+    A[👨‍💻 Push Code] --> B[📦 GitHub]
+    B --> C[🐳 Docker Hub]
+    C --> D[🚀 Render]
+    D --> E[🌐 Live Site]
 
-    style A fill:#f9f,stroke:#333,stroke-width:1px
-    style B fill:#cfc,stroke:#333,stroke-width:1px
-    style C fill:#fcf,stroke:#333,stroke-width:1px
-    style D fill:#ccf,stroke:#333,stroke-width:1px
-    style E fill:#ffc,stroke:#333,stroke-width:1px
+    style A fill:#2563eb,stroke:#1e40af,stroke-width:2px,color:#fff
+    style B fill:#10b981,stroke:#059669,stroke-width:2px,color:#fff
+    style C fill:#3b82f6,stroke:#2563eb,stroke-width:2px,color:#fff
+    style D fill:#8b5cf6,stroke:#7c3aed,stroke-width:2px,color:#fff
+    style E fill:#f59e0b,stroke:#d97706,stroke-width:2px,color:#fff
 ```
+
+**Workflow Steps:**
+
+1. **Developer Push** — Code changes are committed and pushed to GitHub
+2. **GitHub Repository** — Source code is versioned and stored
+3. **Docker Hub Build** — Automated image build triggered via webhook
+4. **Render Deployment** — Platform pulls latest Docker image automatically
+5. **Live Website** — Portfolio is deployed and accessible to users
 
 This ensures that any change merged to the main branch is reflected live without manual steps.
 
