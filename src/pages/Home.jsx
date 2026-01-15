@@ -6,7 +6,7 @@ import About from "../pages/About";
 
 export default function Home() {
   return (
-    <div>
+    <div style={{ paddingTop: "40px", paddingBottom: "80px" }}>
       <section id="home" style={styles.hero}>
         <div style={styles.inner}>
           <div style={styles.textContainer}>
@@ -49,7 +49,6 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    maxWidth: "1200px",
     width: "100%",
     flexWrap: "wrap",
     gap: "2rem",

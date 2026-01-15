@@ -3,7 +3,6 @@ import ProjectCarousel from "./ProjectCarousel";
 export default function ProjectCard({
   title,
   description,
-  overview,
   highlights,
   role,
   tech,

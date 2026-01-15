@@ -166,7 +166,7 @@ export default function Projects() {
 const styles = {
   grid: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(500px, 1fr))",
+    gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 500px), 1fr))",
     gap: "1.5rem",
     margin: "0 auto",
   },
