@@ -6,7 +6,7 @@ import About from "../pages/About";
 
 export default function Home() {
   return (
-    <div style={{ paddingBottom: "80px" }}>
+    <div>
       <section id="home" style={styles.hero}>
         <div style={styles.inner}>
           <div style={styles.textContainer}>

@@ -27,7 +27,7 @@ const styles = {
     padding: "1.5rem",
     borderTop: "1px solid #334155",
     fontSize: "1.5rem",
-    position: "fixed",
+    position: "sticky",
     bottom: 0,
     left: 0,
     width: "100%",
