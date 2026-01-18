@@ -5,6 +5,7 @@ import {
   FaCss3Alt,
   FaNodeJs,
   FaDocker,
+  FaMicrosoft,
   FaGitAlt,
   FaLinux,
   FaPython,
@@ -27,7 +28,6 @@ export default function TechStack() {
 
       <div style={styles.grid}>
         <Category title="Front-end">
-          {/* React with white background */}
           <div
             style={{
               backgroundColor: "#fff",
@@ -40,7 +40,6 @@ export default function TechStack() {
             <FaReact color="#61DAFB" />
           </div>
 
-          {/* React Native */}
           <FaReact color="#61DAFB" title="React Native" />
           <FaJs color="#F7DF1E" title="JavaScript" />
           <span style={{ fontSize: "1rem" }} title="TypeScript">
@@ -77,9 +76,7 @@ export default function TechStack() {
           <span style={{ fontSize: "1rem" }} title="Docker Compose">
             Docker Compose
           </span>
-          <span style={{ fontSize: "1rem" }} title="Kubernetes">
-            Kubernetes
-          </span>
+          <FaMicrosoft color="#0078D4" title="Microsoft 365" />
         </Category>
 
         <Category title="Tools">

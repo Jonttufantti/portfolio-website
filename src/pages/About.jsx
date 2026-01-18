@@ -5,15 +5,15 @@ export default function About() {
         <h1>About Me</h1>
 
         <p style={styles.intro}>
-          I am an ICT Engineering graduate and full-stack developer with a
-          strong focus on front-end development. Previously, I worked nearly 10
-          years in accounting, where I developed resilience, attention to
-          detail, and teamwork skills.
+          I am an ICT Engineer and full-stack developer with a emphasis on
+          front-end development. Previously, I worked nearly 10 years in
+          accounting, where I developed resilience, attention to detail, and
+          teamwork skills.
           <br />
           <br />
           Today, I build practical web applications using React, Node.js, and
           Docker, while strengthening my back-end, cloud, and DevOps expertise.
-          My work combines problem-solving, creativity, and hands-on technical
+          My skills combines problem-solving, creativity, and hands-on technical
           skills, and I enjoy tackling new challenges through projects that make
           a real impact.
         </p>
