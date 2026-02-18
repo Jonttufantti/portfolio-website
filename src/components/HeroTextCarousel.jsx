@@ -27,8 +27,7 @@ export default function HeroTextCarousel() {
 
       <SwiperSlide>
         <p style={styles.text}>
-          I specialize in full-stack web development with a strong frontend
-          focus.
+          I learn fast, build with care, and love a good challenge.
         </p>
       </SwiperSlide>
 

@@ -137,13 +137,14 @@ export default function Projects() {
           highlights={[
             "Responsive design for desktop and mobile",
             "Animated reveals on scroll for polished user experience",
-            "CI/CD pipeline: push to GitHub → Docker Hub → Render deployment",
+            "Deployed on GitHub Pages with custom domain cv.sandbacka.fi",
+            "Originally deployed via Docker Hub → Render CI/CD pipeline",
           ]}
           role={[
             "Designed and implemented full front-end using React",
             "Structured components for reusability (Navbar, Footer, ProjectCard, TechStack, HeroTextCarousel)",
             "Integrated project showcase with images, tech stack, and GitHub links",
-            "Set up automated deployment pipeline from GitHub to Docker Hub to Render",
+            "Migrated deployment from Docker/Render pipeline to GitHub Pages with custom domain",
           ]}
           tech={[
             "React",
@@ -152,7 +153,8 @@ export default function Projects() {
             "React Icons",
             "React Router",
             "Docker",
-            "Render",
+            "GitHub Actions",
+            "GitHub Pages",
           ]}
           link="https://github.com/Jonttufantti/portfolio-website"
           images={[port1, port2, port3, port4]}

@@ -5,17 +5,16 @@ export default function About() {
         <h1>About Me</h1>
 
         <p style={styles.intro}>
-          I am an ICT Engineer and full-stack developer with a emphasis on
-          front-end development. Previously, I worked nearly 10 years in
-          accounting, where I developed resilience, attention to detail, and
-          teamwork skills.
+          I am an ICT Engineer and full-stack developer with nearly 10 years of
+          prior experience in accounting, where I developed resilience,
+          attention to detail, and teamwork skills.
           <br />
           <br />
           Today, I build practical web applications using React, Node.js, and
-          Docker, while strengthening my back-end, cloud, and DevOps expertise.
-          My skills combines problem-solving, creativity, and hands-on technical
-          skills, and I enjoy tackling new challenges through projects that make
-          a real impact.
+          Docker, with a growing focus on cloud and DevOps. My work combines
+          problem-solving, creativity, and hands-on technical skills, and I
+          enjoy tackling new challenges through projects that make a real
+          impact.
         </p>
 
         <Section title="Work Experience">
@@ -30,8 +29,13 @@ export default function About() {
           <Item
             title="Software Developer – TUAS - theFirma"
             period="May 2023 – Aug 2023"
-            description="Web development with React, MongoDB, JavaScript, and Expo.
-          Also served as project manager for multiple projects."
+            description="Developed multiple projects across web and mobile platforms. Also served as project manager."
+            bullets={[
+              "Electrical Training App: Managed Apple App Store publishing, client communication, and content updates.",
+              "Booking App: React Native development, Chakra UI updates, and Git repository optimization by consolidating data stores.",
+              "Entrefox: Revived a non-functional legacy project by updating dependencies, implementing internationalization, and optimizing for tablet layouts.",
+              "Project Gate: Improved search features, accessibility, and bug fixes in an ERP system.",
+            ]}
           />
 
           <Item
@@ -84,12 +88,19 @@ function Section({ title, children }) {
   );
 }
 
-function Item({ title, period, description }) {
+function Item({ title, period, description, bullets }) {
   return (
     <div style={styles.item}>
       <strong>{title}</strong>
       <div style={styles.period}>{period}</div>
-      <p>{description}</p>
+      {description && <p>{description}</p>}
+      {bullets && (
+        <ul style={styles.bullets}>
+          {bullets.map((b, i) => (
+            <li key={i}>{b}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
@@ -128,5 +139,10 @@ const styles = {
     fontSize: "0.85rem",
     color: "#94a3b8",
     marginBottom: "0.5rem",
+  },
+  bullets: {
+    marginTop: "0.5rem",
+    paddingLeft: "1.2rem",
+    lineHeight: 1.6,
   },
 };
